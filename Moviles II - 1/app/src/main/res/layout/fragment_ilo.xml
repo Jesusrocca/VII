@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.Ilo">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ilofondo"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fondo de Ilo" />
+
+    <!-- Overlay para oscurecer la imagen de fondo y hacer que el texto sea más legible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Texto de bienvenida a Ilo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO A ILO"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Descripción corta de Ilo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ilo, una ciudad costera llena de encanto y tradición, ubicada en la región de Moquegua, Perú."
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-light" />
+
+    <!-- Botón para más información -->
+    <Button
+        android:layout_width="184dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/botonfondo1"
+        android:padding="10dp"
+        android:text="Más Información"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>

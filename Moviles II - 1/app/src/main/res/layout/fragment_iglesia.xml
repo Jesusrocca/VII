@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.Iglesia">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/temploilo"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fondo del Templo de San Gerónimo" />
+
+    <!-- Overlay para oscurecer la imagen de fondo y hacer que el texto sea más legible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000" />
+
+    <!-- Texto del título del templo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Templo de San Gerónimo"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Descripción del templo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moquegua\n\nCon más de 120 años de existencia, es un monumento histórico para Ilo. Posee una antigua pila bautismal. Tiene, además, una nave de planta rectangular con un coro alto y fachada simétrica que termina en una torre central. Presenta impresionantes espejos barrocos dorados con pan de oro.\n\nEl techo tiene estructura de tijeral de madera, con cubierta de calamina. Llama la atención una de las tres campanas del campanario, que lleva grabado el año 1647."
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="4dp"
+            android:background="#AA000000"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:backgroundTint="#80000000"
+            android:layout_gravity="center" />
+    </ScrollView>
+
+</FrameLayout>

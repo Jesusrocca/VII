@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.Malecon">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/maleconilo1"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fondo del Malecón Costero de Ilo" />
+
+    <!-- Overlay para oscurecer la imagen de fondo y hacer que el texto sea más legible -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#20000000" />
+
+    <!-- Contenedor para el texto y el botón -->
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#AAFFFFFF"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        android:backgroundTintMode="src_atop"
+        android:backgroundTint="#20000000"
+        android:layout_gravity="start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <!-- Texto del título del malecón -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malecón Costero de Ilo"
+            android:textSize="26sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold" />
+
+        <!-- Descripción del malecón -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="86dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El Malecón Costero de Ilo es un malecón ubicado en Ilo, departamento de Moquegua, Perú. Se ubica en el borde costero del océano Pacífico. Tiene una extensión de 1.6 kilómetros desde el Muelle Fiscal hasta la Plaza Perú. Alrededor del malecón se encuentra el Muelle Fiscal, la Glorieta y la Municipalidad Provincial de Ilo."
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="6dp" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

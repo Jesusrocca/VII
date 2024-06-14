@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.Muelle">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/muelleilo"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fondo del Muelle Fiscal" />
+
+    <!-- Overlay para oscurecer la imagen de fondo y hacer que el texto sea más legible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Texto del título del muelle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muelle Fiscal"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Descripción del muelle -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moquegua\n\nConstruido a fines del siglo XIX, con soportes de hierro, plataforma de madera y escaleras laterales. Todavía quedan huellas de las líneas férreas y soportes de viejas grúas como prueba de la esforzada labor portuaria que se realizaba antiguamente."
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="4dp"
+            android:background="#AA000000"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:backgroundTint="#80000000"
+            android:layout_gravity="center" />
+    </ScrollView>
+
+    <!-- Botón para más información -->
+
+
+</FrameLayout>
